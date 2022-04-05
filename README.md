@@ -1,4 +1,4 @@
-# Meal Finder - [Demo](https://srdrolmez.github.io/Meal-API-Project/src){:target="_blank"}
+# Meal Finder - [Demo](https://srdrolmez.github.io/Meal-API-Project/src){:target="\_blank"}
 
 ## Description
 
