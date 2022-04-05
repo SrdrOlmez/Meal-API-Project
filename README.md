@@ -2,7 +2,7 @@
 
 ## Description
 
-Meal finder depends on TheMealDB API which allows you to search meal by category or by ingredient. Each meal has instructions and a video link shows how to cook. Discover the cook in you !
+Meal finder depends on TheMealDB API which allows you to search meals by category or by ingredient. Each meal has instructions and a video link that shows how to cook. Discover the cook in you !
 
 ![Screenshot](./public/images/meal-api.png)
 
@@ -12,4 +12,4 @@ Meal finder depends on TheMealDB API which allows you to search meal by category
 
 - You can also search meals by ingredients. Write the ingredient you have and display results by ingredient.
 
-- You can see the cooking instructions and watch a video shows how to cook.
+- You can see the cooking instructions and watch a video that shows how to cook.
