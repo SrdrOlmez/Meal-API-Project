@@ -177,7 +177,7 @@ h2 {
   height: 90%;
   width: 90%;
   color: white;
-  display: block;
+  display: none;
   overflow-y: scroll;
 }
 .showPopup {
