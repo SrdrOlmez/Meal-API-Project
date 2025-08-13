@@ -170,18 +170,23 @@ h2 {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.9); /* sadece popup kendisi küçük başlar */
   background-color: rgba(235, 172, 0, 0.95);
   padding: 2rem 0;
   border-radius: 1rem;
   height: 90%;
   width: 90%;
   color: white;
-  display: none;
+  opacity: 0;             /* görünmez başlar */
+  visibility: hidden;     /* tıklanamaz */
   overflow-y: scroll;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 .showPopup {
-  display: block;
+  transform: translate(-50%, -50%) scale(1); /* açılınca normal boyut */
+  opacity: 1;
+  visibility: visible;
 }
 
 .popup-close-btn {
