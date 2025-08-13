@@ -4,15 +4,12 @@ const mealDetails = document.querySelector('.meal-details');
 const popupCloseBtn = document.getElementById('popup-close-btn');
 const selectCategory = document.getElementById('select-category');
 
-
-
 selectCategory.addEventListener('click', createCategories);
 searchButton.addEventListener('click', resultsByIngredient);
 mealResult.addEventListener('click', createPopup);
 popupCloseBtn.addEventListener('click', () =>{
   mealDetails.parentElement.classList.remove('showPopup')
 });
-
 
 async function createCategories() {
   try {
@@ -28,7 +25,6 @@ async function createCategories() {
     console.log(err.message)
   }
 }
-
 
 async function resultsByCategory() {
   try {
@@ -58,7 +54,6 @@ async function resultsByCategory() {
     console.log(err.message);
   }
 }
-
 
 async function resultsByIngredient() {
   try {
@@ -93,7 +88,6 @@ async function resultsByIngredient() {
   }
 }
 
-
 async function createPopup(event) {
   try {
     event.preventDefault();
@@ -107,7 +101,6 @@ async function createPopup(event) {
     console.log(err.message);
   }
 }
-
 
 function renderPopup(meal) {
   meal = meal[0];
@@ -129,10 +122,7 @@ function renderPopup(meal) {
     </div>
   `;
   mealDetails.innerHTML = html;
-  if (!mealDetails.parentElement.classList.contains('showPopup')) {
-      mealDetails.parentElement.classList.add('showPopup');
+  mealDetails.parentElement.classList.add('showPopup');
 }
 
 window.addEventListener('load', resultsByCategory);
-
-
