@@ -129,7 +129,8 @@ function renderPopup(meal) {
     </div>
   `;
   mealDetails.innerHTML = html;
-  mealDetails.parentElement.classList.add('showPopup');
+  if (!mealDetails.parentElement.classList.contains('showPopup')) {
+      mealDetails.parentElement.classList.add('showPopup');
 }
 
 window.addEventListener('load', resultsByCategory);
