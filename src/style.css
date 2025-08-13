@@ -178,10 +178,7 @@ h2 {
   width: 90%;
   color: white;
   display: block;
-  opacity: 0;
-  pointer-events: none;
   overflow-y: scroll;
-  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .showPopup {
   display: block;
