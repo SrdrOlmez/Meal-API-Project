@@ -15,7 +15,7 @@ h3 {
   overflow: hidden;
 }
 .container {
-  min-height: 100vh;
+  min-height: 100%;
   background-image: url("../public/images/board.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
