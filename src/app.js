@@ -14,6 +14,7 @@ searchButton.addEventListener('click', resultsByIngredient);
 mealResult.addEventListener('click', createPopup);
 popupCloseBtn.addEventListener('click', () => {
     mealDetails.parentElement.classList.remove('showPopup');
+    document.body.classList.remove('no-scroll');
 });
 
 // Kategorileri yükleme
@@ -131,7 +132,6 @@ function renderPopup(meal) {
         </div>
     `;
     mealDetails.innerHTML = html;
-
-    // Zoom sorunu çözümü: sadece class ekle
     mealDetails.parentElement.classList.add('showPopup');
+    document.body.classList.add('no-scroll');
 }
